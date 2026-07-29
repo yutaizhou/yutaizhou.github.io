@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/profile.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    function pubs_off_start() {
+      $('.pub-row:not(.highlighted)').hide();
+      document.getElementById('sel_pub_button').classList.add('toggled');
+      document.getElementById('all_pub_button').classList.remove('toggled');
+    }
+
+    function pubs_off() {
+      $('.pub-row:not(.highlighted)').slideUp();
+      document.getElementById('sel_pub_button').classList.add('toggled');
+      document.getElementById('all_pub_button').classList.remove('toggled');
+    }
+
+    function pubs_on() {
+      $('.pub-row:not(.highlighted)').slideDown();
+      document.getElementById('all_pub_button').classList.add('toggled');
+      document.getElementById('sel_pub_button').classList.remove('toggled');
+    }
+
+    document.addEventListener('DOMContentLoaded', pubs_off_start);
+  </script>
+  <title>Yutai Zhou</title>
+</head>
+
+<body>
+  <a name="top"></a>
+  <div style="max-width:900px; width:100%; margin:0 auto; padding: 20px;">
+
+    <!-- Intro & photo -->
+    <div class="table-like">
+      <div class="intro-block">
+        <p align="center">
+          <name>Yutai Zhou</name>
+        </p>
+        <p align="center" style="font-family:'Courier New', Courier, monospace;">
+          yutaizho at usc.edu
+        </p>
+        <p>
+          Hello! I am a 4th year Computer Science Ph.D. student at
+          <a href="https://www.cs.usc.edu/" target="_blank" rel="noopener">USC</a>, where I am fortunate to be
+          co-advised by <a href="https://ebiyik.github.io/" target="_blank" rel="noopener">Erdem Bıyık</a> and 
+          <a href="https://stephentu.github.io/" target="_blank" rel="noopener">Stephen Tu</a>.
+
+          My research is centered on RL from preference feedback, representation learning, and offline policy evaluation.
+          I am currently collaborating with
+          <a href="https://www.tri.global/" target="_blank" rel="noopener">Toyota Research Institute</a>.
+
+          <br><br>
+          Prior to my Ph.D., I was a research engineer at
+          <a href="https://www.ll.mit.edu/" target="_blank" rel="noopener">MIT Lincoln Laboratory</a> for 3.5 years,
+          where I collaborated closely with <a href="https://mykel.kochenderfer.com/" target="_blank" rel="noopener">Mykel Kochenderfer</a> and
+          completed graduate coursework from <a href="https://cgoe-intranet.stanford.edu/stanford-online" target="_blank" rel="noopener">Stanford Online</a> while working full time.
+          
+          Even before that, I received my B.S. in Computer Science from the
+          <a href="https://www.ufl.edu/" target="_blank" rel="noopener">University of Florida</a>, where
+           I worked with <a href="https://ece.ufl.edu/people/faculty/name/alina-zare/" target="_blank" rel="noopener">Alina Zare</a>.
+          
+          <br><br>
+          Fun fact: My name is pronounced "you-tie", but I frequently get called "you-tee" or "Utah". I have even gotten "Tyler" once.
+
+           
+
+        </p>
+        <p align="center">
+          <a href="files/CV.pdf">CV</a> &nbsp;/&nbsp;
+          <a href="https://github.com/yutaizhou" target="_blank" rel="noopener">GitHub</a> &nbsp;/&nbsp;
+          <a href="https://x.com/yutai95" target="_blank" rel="noopener">Twitter</a> &nbsp;/&nbsp;
+          <a href="https://www.linkedin.com/in/yutaizhou/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;/&nbsp;
+          <a href="https://scholar.google.com/citations?user=035GLzIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        </p>
+      </div>
+
+      <div class="image-cropper">
+        <img src="images/profile.png" alt="Yutai Zhou">
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section-block">
+      <heading>Education</heading>
+      <ul class="education-list">
+        <li>
+          <span class="edu-icon"><i class="fa fa-graduation-cap"></i></span>
+          <span class="edu-details">
+            Ph.D. in Computer Science,
+            <strong>University of Southern California</strong>
+          </span>
+          <span class="edu-years">2023–present</span>
+        </li>
+        <li>
+          <span class="edu-icon"><i class="fa fa-graduation-cap"></i></span>
+          <span class="edu-details">
+            Graduate coursework,
+            <strong>Stanford Center for Professional Development</strong>
+          </span>
+          <span class="edu-years">2021–2023</span>
+        </li>
+        <li>
+          <span class="edu-icon"><i class="fa fa-graduation-cap"></i></span>
+          <span class="edu-details">
+            B.S. in Computer Science,
+            <strong>University of Florida</strong>
+          </span>
+          <span class="edu-years">2014–2019</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- News -->
+    <div class="section-block">
+      <heading>News</heading>
+      <ul class="news-list">
+        <li><b>Jun 2026</b> <a href="https://liralab.usc.edu/clam/" target="_blank" rel="noopener">CLAM</a> accepted to IROS 2026!</li>
+        <li><b>Jan 2026</b> <a href="https://autofocus-il.github.io/" target="_blank" rel="noopener">AutoFocus-IL</a> accepted to ICRA 2026!</li>
+        <li><b>Apr 2026</b> Began working with my co-advisor, <a href="https://stephentu.github.io/" target="_blank" rel="noopener">Stephen Tu</a>.</li>
+        <li><b>Jun 2025</b> Awarded the <strong>USC Capital One Fellowship</strong> from the Center for Responsible AI and Decision Making in Finance (CREDIF).</li>
+        <li><b>Jan 2025</b> <a href="https://liralab.usc.edu/gabril/" target="_blank" rel="noopener">GABRIL</a> accepted to IROS 2025!</li>
+        <li><b>Apr 2024</b> Began working with my advisor, <a href="https://ebiyik.github.io/" target="_blank" rel="noopener">Erdem Bıyık</a>, towards the end of my first year.</li>
+        <li><b>Aug 2023</b> Started my Ph.D. at the University of Southern California! 
+        <!-- <li><b>Jan 2020</b> Started my career at MIT Lincoln Laboratory as a research engineer... 2 months before the COVID-19 pandemic. 😵‍💫 </li>
+        <li><b>Dec 2019</b> Received my B.S. in Computer Science from the University of Florida.</li> -->
+      </ul>
+    </div>
+
+    <!-- Publications -->
+    <div class="section-block">
+      <heading>Publications</heading>
+      <a class="pub-toggle-paren" href="javascript:void(0)">(</a><a class="pub-toggle" id="sel_pub_button" href="javascript:pubs_off()">Highlighted</a>
+      <a class="pub-toggle-paren" href="javascript:void(0)"> / </a><a class="pub-toggle" id="all_pub_button" href="javascript:pubs_on()">All</a><a class="pub-toggle-paren" href="javascript:void(0)">)</a>
+      <p><em>(* denotes equal contribution)</em></p>
+
+      <!-- <div class="pub-row highlighted">
+        <papertitle>Subspace Inference Enables Efficient Active Reward Learning from Preferences</papertitle>
+        <div class="pub-authors">
+          <strong>Yutai Zhou</strong> and Erdem Bıyık
+        </div>
+        <div class="pub-venue">Under review, 2025.</div>
+      </div> -->
+
+      <div class="pub-row highlighted">
+        <papertitle>CLAM: Continuous Latent Action Models for Robot Learning from Unlabeled Demonstrations</papertitle>
+        <div class="pub-authors">
+          Anthony Liang, Pavel Czempin, Matthew Hong, <strong>Yutai Zhou</strong>, Erdem Bıyık, and Stephen Tu
+        </div>
+        <div class="pub-venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026.</div>
+        <div class="pub-links">
+          [<a href="https://clamrobot.github.io/" target="_blank" rel="noopener">website</a>]
+          [<a href="https://arxiv.org/abs/2505.04999" target="_blank" rel="noopener">paper</a>]
+          [<a href="https://github.com/clamrobot/clam" target="_blank" rel="noopener">code</a>]
+        </div>
+      </div>
+
+      <div class="pub-row highlighted">
+        <papertitle>AutoFocus-IL: VLM-based Saliency Maps for Data-Efficient Visual Imitation Learning without Extra Human Annotations</papertitle>
+        <div class="pub-authors">
+          Litian Gong, Fatemeh Bahrani, <strong>Yutai Zhou</strong>, Amin Banayeeanzade, Jiachen Li, and Erdem Bıyık
+        </div>
+        <div class="pub-venue">IEEE International Conference on Robotics and Automation (ICRA), 2026.</div>
+        <div class="pub-links">
+          [<a href="https://autofocus-il.github.io/" target="_blank" rel="noopener">website</a>]
+          [<a href="https://arxiv.org/abs/2511.18617" target="_blank" rel="noopener">paper</a>]
+          [<a href="https://github.com/autofocus-il/autofocus-il" target="_blank" rel="noopener">code</a>]
+        </div>
+      </div>
+
+      <div class="pub-row highlighted">
+        <papertitle>GABRIL: Gaze-Based Regularization for Mitigating Causal Confusion in Imitation Learning</papertitle>
+        <div class="pub-authors">
+          Amin Banayeeanzade, Fatemeh Bahrani, <strong>Yutai Zhou</strong>, and Erdem Bıyık
+        </div>
+        <div class="pub-venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025.</div>
+        <div class="pub-links">
+          [<a href="https://liralab.usc.edu/gabril/" target="_blank" rel="noopener">website</a>]
+          [<a href="https://arxiv.org/abs/2507.19647" target="_blank" rel="noopener">paper</a>]
+          [<a href="https://github.com/nfbahrani/GABRIL-Atari" target="_blank" rel="noopener">code</a>]
+        </div>
+      </div>
+
+      <div class="pub-row">
+        <papertitle>In Pursuit of Predictive Models of Human Preferences Toward AI Teammates</papertitle>
+        <div class="pub-authors">
+          Ho Chit Siu, Jaime D. Peña, <strong>Yutai Zhou</strong>, and Ross E. Allen
+        </div>
+        <div class="pub-venue">arXiv preprint, 2025.</div>
+        <div class="pub-links">
+          [<a href="https://arxiv.org/abs/2503.15516" target="_blank" rel="noopener">paper</a>]
+        </div>
+      </div>
+
+      <div class="pub-row">
+        <papertitle>In-Context Generalization to New Tasks From Unlabeled Observation Data</papertitle>
+        <div class="pub-authors">
+          Anthony Liang, Pavel Czempin, <strong>Yutai Zhou</strong>, Stephen Tu, and Erdem Bıyık
+        </div>
+        <div class="pub-venue">ICML 2024 Workshop on In-Context Learning, 2024.</div>
+        <div class="pub-links">
+          [<a href="https://mlanthology.org/icmlw/2024/liang2024icmlw-incontext/" target="_blank" rel="noopener">paper</a>]
+        </div>
+      </div>
+
+      <div class="pub-row">
+        <papertitle>Evaluation of Human-AI Teams for Learned and Rule-Based Agents in Hanabi</papertitle>
+        <div class="pub-authors">
+          Ho Chit Siu, Jaime D. Pena, Kimberlee C. Chang, Edenna Chen, <strong>Yutai Zhou</strong>, Victor J. Lopez, Kyle Palko, and Ross E. Allen
+        </div>
+        <div class="pub-venue">Advances in Neural Information Processing Systems (NeurIPS), 2021.</div>
+        <div class="pub-links">
+          [<a href="https://proceedings.neurips.cc/paper/2021/hash/9d9871a7fae3f020844163a750f91767-Abstract.html" target="_blank" rel="noopener">paper</a>]
+        </div>
+      </div>
+
+      <div class="pub-row">
+        <papertitle>Learning Emergent Discrete Message Communication for Cooperative Reinforcement Learning</papertitle>
+        <div class="pub-authors">
+          Sheng Li, <strong>Yutai Zhou</strong>, Ross Allen, and Mykel J. Kochenderfer
+        </div>
+        <div class="pub-venue">IEEE International Conference on Robotics and Automation (ICRA), 2022.</div>
+        <div class="pub-links">
+          [<a href="https://arxiv.org/abs/2102.12550" target="_blank" rel="noopener">paper</a>]
+        </div>
+      </div>
+
+      <div class="pub-row">
+        <papertitle>Health-Informed Policy Gradients for Multi-Agent Reinforcement Learning</papertitle>
+        <div class="pub-authors">
+          Ross E. Allen, Jayesh K. Gupta, Jaime Pena, <strong>Yutai Zhou</strong>, Javona White Bear, and Mykel J. Kochenderfer
+        </div>
+        <div class="pub-venue">Workshop on Optimization and Learning in Multiagent Systems at AAMAS, 2021.</div>
+        <div class="pub-links">
+          [<a href="https://arxiv.org/abs/1908.01022" target="_blank" rel="noopener">paper</a>]
+        </div>
+      </div>
+
+      <div class="pub-row">
+        <papertitle>Towards a Distributed Framework for Multi-Agent Reinforcement Learning Research</papertitle>
+        <div class="pub-authors">
+          <strong>Yutai Zhou</strong>, Shawn Manuel, Peter Morales, Sheng Li, Jaime Pena, and Ross E. Allen
+        </div>
+        <div class="pub-venue">IEEE High Performance Extreme Computing Conference (HPEC), 2020. Outstanding Paper Award.</div>
+        <div class="pub-links">
+          [<a href="https://ieeexplore.ieee.org/document/9286188" target="_blank" rel="noopener">paper</a>]
+        </div>
+      </div>
+    </div>
+
+    <!-- Professional Service -->
+    <div class="section-block">
+      <heading>Professional Service</heading>
+      <ul class="news-list">
+        <li><b>Conference Reviewer</b> ICML 2026, ICLR 2026, ICRA 2026, IROS 2025, NeurIPS 2025</li>
+        <li><b>Workshop Reviewer</b> RSS 2025 HitLRL; CoRL 2025 Eval&amp;Deploy</li>
+      </ul>
+    </div>
+
+    <!-- Misc -->
+    <div class="section-block">
+      <heading>Misc.</heading>
+
+      <p>
+        I spent much of my childhood in Shanghai, China, and much of my teenage / college years in Florida, USA.
+        Outside of work, I love strength training and have competed in powerlifting and strongman competitions. 
+        I just learned how to swim in 2025 (despite growing up in coastal cities all my life), and am now trying to learn salsa and bachata!
+      </p>
+
+      <!-- <p><strong>Teaching</strong></p>
+      <ul class="news-list">
+        <li><b>USC</b> Graduate TA for DSCI 552 (Summer &amp; Fall 2024) and CSCI 599 (Spring 2024)</li>
+        <li><b>UF</b> Undergraduate TA for COP 2271 (2017) and EGM 3520 Honors (2016)</li>
+      </ul> -->
+
+      <!-- <p><strong>Mentoring &amp; Outreach</strong></p>
+      <ul class="news-list">
+        <li>Ph.D. student mentor for undergraduates at USC (2024–2025)</li>
+        <li>CURVE and IUSSTF research mentor at USC (2024–2025)</li>
+        <li>Undergraduate Mentoring Program organizer at USC (2024–2025)</li>
+      </ul> -->
+
+      <!-- <p><strong>Personal</strong></p>
+      <ul class="news-list">
+        <li><b>Languages</b> English and Mandarin Chinese (native fluency)</li>
+        <li><b>Interests</b> Powerlifting, bodybuilding, swimming, traveling</li>
+      </ul> -->
+    </div>
+
+    <br>
+    <hr>
+    <div class="footer-note">
+      Inspired by <a href="https://jonbarron.info/" target="_blank" rel="noopener">this</a>
+      and <a href="https://www.jessezhang.net/" target="_blank" rel="noopener">that</a>.
+    </div>
+  </div>
+</body>
+
+</html>
