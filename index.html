@@ -34,6 +34,25 @@
     }
 
     document.addEventListener('DOMContentLoaded', pubs_off_start);
+
+    function ordinal(n) {
+      const j = n % 10;
+      const k = n % 100;
+      if (j === 1 && k !== 11) return n + 'st';
+      if (j === 2 && k !== 12) return n + 'nd';
+      if (j === 3 && k !== 13) return n + 'rd';
+      return n + 'th';
+    }
+
+    fetch('https://tally.yuki.sh/hits/yutaizhou/yutaizhou.github.io.json')
+      .then(response => response.json())
+      .then(data => {
+        const count = data.visit;
+        if (count == null) return;
+        document.getElementById('visitor-count').textContent = ordinal(count);
+        document.getElementById('visitor-line').hidden = false;
+      })
+      .catch(() => {});
   </script>
   <title>Yutai Zhou</title>
 </head>
@@ -282,6 +301,8 @@
     <br>
     <hr>
     <div class="footer-note">
+      <span id="visitor-line" hidden>You are the <span id="visitor-count"></span> visitor!</span><br>
+      Last updated on <span id="last-updated">July 29, 2026</span>.<br>
       Inspired by <a href="https://jonbarron.info/" target="_blank" rel="noopener">this</a>
       and <a href="https://www.jessezhang.net/" target="_blank" rel="noopener">that</a>.
     </div>
