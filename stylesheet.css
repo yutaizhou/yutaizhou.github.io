@@ -47,7 +47,14 @@ heading {
 }
 
 papertitle {
-  font-size: 14.5px;
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+}
+
+papertitle a {
+  display: block;
+  max-width: min(75ch, 100%);
   font-weight: 700;
 }
 
@@ -177,17 +184,22 @@ ul.education-list li {
   margin-top: 2px;
 }
 
+.pub-authors strong {
+  text-decoration: underline;
+}
+
 .pub-venue {
   margin-top: 2px;
   color: #333;
 }
 
-.pub-links {
-  margin-top: 4px;
+.pub-conf {
+  /* color: #209465; */
+  font-weight: 300;
 }
 
-.pub-links a {
-  margin-right: 0.25em;
+.pub-links {
+  margin-top: 4px;
 }
 
 .section-block {
